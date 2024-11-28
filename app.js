@@ -14,3 +14,18 @@ if (number % 2 === 0) {
 } else {
     console.log(`dispari`);
 }
+
+
+//Bonus 2
+const string = process.argv.slice(2)[0];
+const vocal = ["a", "e", "i", "o", "u"];
+let count = 0;
+
+for (let i = 0; i < string.length; i++) {
+  const curChar = string[i];
+  if (vocal.includes(curChar)) {
+    count++;
+  }
+}
+
+console.log(`Nella parola ${string} ci sono ${count} vocali`);
